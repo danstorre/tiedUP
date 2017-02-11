@@ -1,0 +1,6 @@
+framework module Pods_tiedupTests {
+  umbrella header "Pods-tiedupTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
