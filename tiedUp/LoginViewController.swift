@@ -20,13 +20,24 @@ class LoginViewController: UIViewController {
         stackView.addArrangedSubview(loginButton)
         loginButton.readPermissions = ["email","public_profile"]
         
-        if ((FBSDKAccessToken.current()) != nil) {
-            let alertController: UIAlertController = UIAlertController(title: "login", message: "you're already logged", preferredStyle: .alert)
-            
-            self.present(alertController, animated: true, completion: nil)
-        }
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if ((FBSDKAccessToken.current()) != nil) {
+            let storyboard =  UIStoryboard(name: "mainNavigation", bundle: nil)
+            let vc = storyboard.instantiateInitialViewController() as! UITabBarController
+            
+            
+            self.present(vc, animated: true, completion: nil)
+        }
+
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

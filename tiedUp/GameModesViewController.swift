@@ -15,10 +15,11 @@ class GameModesViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    
     override func viewDidLoad() {
         
-        let marathonGameMode = GameMode(image: #imageLiteral(resourceName: "marathon"), title: "Marathon" , subtitle: "Do your best until you \n run out of lives")
-        let timeTrialGameMode = GameMode(image: #imageLiteral(resourceName: "timetrial"), title: "Time trial" , subtitle: "Want to challenge time? \n go ahead and show you're great!")
+        let marathonGameMode = GameMode(image: #imageLiteral(resourceName: "marathon"), title: "Marathon" , subtitle: "Do your best until you \nrun out of lives")
+        let timeTrialGameMode = GameMode(image: #imageLiteral(resourceName: "timetrial"), title: "Time trial" , subtitle: "Want to challenge time? \ngo ahead and show you're great!")
         
         gameModes.append(marathonGameMode)
         gameModes.append(timeTrialGameMode)

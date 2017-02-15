@@ -117,6 +117,13 @@ run out of lives</string>
                                     <outlet property="delegate" destination="XAs-mm-BaU" id="zn7-O0-jH5"/>
                                 </connections>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="NcS-ZS-DxT">
+                                <rect key="frame" x="242" y="558" width="117" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Eep-H8-XH0"/>
+                                    <constraint firstAttribute="width" constant="117" id="mnj-08-ydk"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpO-sO-Jaq">
                                 <rect key="frame" x="2" y="86" width="375" height="1"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -133,6 +140,8 @@ run out of lives</string>
                             <constraint firstItem="fBg-cI-1Kp" firstAttribute="top" secondItem="sPP-En-MQf" secondAttribute="bottom" id="Eci-Tp-u19"/>
                             <constraint firstItem="sPP-En-MQf" firstAttribute="top" secondItem="8cP-Md-Khc" secondAttribute="bottom" constant="10" id="I2h-cj-00C"/>
                             <constraint firstItem="kpO-sO-Jaq" firstAttribute="width" secondItem="z34-hf-Jvh" secondAttribute="width" id="SnU-t9-1mm"/>
+                            <constraint firstItem="fBg-cI-1Kp" firstAttribute="top" secondItem="NcS-ZS-DxT" secondAttribute="bottom" id="Ww1-qb-cPb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NcS-ZS-DxT" secondAttribute="trailing" id="lAC-of-6ov"/>
                             <constraint firstItem="8cP-Md-Khc" firstAttribute="top" secondItem="fKD-9a-vRx" secondAttribute="bottom" constant="20" id="m2G-fk-ew0"/>
                             <constraint firstItem="sPP-En-MQf" firstAttribute="leading" secondItem="z34-hf-Jvh" secondAttribute="leadingMargin" constant="-16" id="nNJ-nv-ASg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sPP-En-MQf" secondAttribute="trailing" constant="-20" id="rFh-oe-pO3"/>
@@ -150,7 +159,7 @@ run out of lives</string>
         <!--Tab Bar Controller-->
         <scene sceneID="VAz-yq-3v1">
             <objects>
-                <tabBarController id="NI9-9U-2vo" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="mainNavigation" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NI9-9U-2vo" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="YYj-bU-daQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -168,6 +177,7 @@ run out of lives</string>
     </scenes>
     <resources>
         <image name="gym" width="37" height="37"/>
+        <image name="logo" width="451" height="153"/>
         <image name="marathon" width="87" height="87"/>
         <image name="profile" width="37" height="37"/>
     </resources>
