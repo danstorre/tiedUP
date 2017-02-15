@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NI9-9U-2vo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="aeo-ak-4GX">
+            <objects>
+                <viewController id="LRv-NA-Frv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PfZ-cb-1yl"/>
+                        <viewControllerLayoutGuide type="bottom" id="kst-AO-S3C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xpM-Fs-pI4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="jt2-DS-jf4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QG6-bc-OHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-166" y="432"/>
+        </scene>
+        <!--GameModesViewController-->
+        <scene sceneID="iqX-1Q-xTV">
+            <objects>
+                <viewController title="GameModesViewController" id="XAs-mm-BaU" customClass="GameModesViewController" customModule="tiedUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fKD-9a-vRx"/>
+                        <viewControllerLayoutGuide type="bottom" id="fBg-cI-1Kp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z34-hf-Jvh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Modes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cP-Md-Khc">
+                                <rect key="frame" x="16" y="40" width="187" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="71" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sPP-En-MQf">
+                                <rect key="frame" x="0.0" y="86" width="379" height="532"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="gameModeCell" rowHeight="140" id="xcN-i4-T2b" customClass="GameModeTableViewCell" customModule="tiedUp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="379" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xcN-i4-T2b" id="bTY-Eh-FQb">
+                                            <rect key="frame" x="0.0" y="0.0" width="346" height="139"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="YBB-NK-bSF">
+                                                    <rect key="frame" x="118" y="43.5" width="220" height="53"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marathon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHq-aS-PsM">
+                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <color key="textColor" red="0.15686274509803921" green="0.80392156862745101" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="323-5N-Ach">
+                                                            <rect key="frame" x="0.0" y="22.5" width="220" height="30.5"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment>
+                                                                    <string key="content">Do your best until you
+run out of lives</string>
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" size="13" name=".SFNSText-Semibold"/>
+                                                                        <real key="NSKern" value="0.0"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                            <tabStops/>
+                                                                        </paragraphStyle>
+                                                                        <color key="NSStrokeColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marathon" translatesAutoresizingMaskIntoConstraints="NO" id="qxn-y9-XwH">
+                                                    <rect key="frame" x="8" y="43" width="110" height="54"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="54" id="G2L-Pa-zCk"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="YBB-NK-bSF" firstAttribute="leading" secondItem="bTY-Eh-FQb" secondAttribute="leadingMargin" constant="110" id="9hc-Ia-wZU"/>
+                                                <constraint firstItem="qxn-y9-XwH" firstAttribute="centerY" secondItem="bTY-Eh-FQb" secondAttribute="centerY" id="Csz-Yd-vlv"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="YBB-NK-bSF" secondAttribute="trailing" id="KyT-5g-36Y"/>
+                                                <constraint firstItem="YBB-NK-bSF" firstAttribute="leading" secondItem="qxn-y9-XwH" secondAttribute="trailing" id="LIP-YW-wba"/>
+                                                <constraint firstItem="YBB-NK-bSF" firstAttribute="centerY" secondItem="bTY-Eh-FQb" secondAttribute="centerY" id="Q1D-Mh-uxK"/>
+                                                <constraint firstItem="qxn-y9-XwH" firstAttribute="leading" secondItem="bTY-Eh-FQb" secondAttribute="leadingMargin" id="qAW-dj-CWK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="gameModeImage" destination="qxn-y9-XwH" id="xDA-GQ-lyD"/>
+                                            <outlet property="gameModeSubtitle" destination="323-5N-Ach" id="gya-Yf-ewM"/>
+                                            <outlet property="gameModeTitle" destination="vHq-aS-PsM" id="x5p-rP-ctf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="XAs-mm-BaU" id="2Ik-8m-tX9"/>
+                                    <outlet property="delegate" destination="XAs-mm-BaU" id="zn7-O0-jH5"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpO-sO-Jaq">
+                                <rect key="frame" x="2" y="86" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Lh7-b2-HUU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kpO-sO-Jaq" firstAttribute="centerX" secondItem="sPP-En-MQf" secondAttribute="centerX" id="7J5-on-bsE"/>
+                            <constraint firstItem="kpO-sO-Jaq" firstAttribute="top" secondItem="sPP-En-MQf" secondAttribute="top" id="D17-Ie-PMQ"/>
+                            <constraint firstItem="8cP-Md-Khc" firstAttribute="leading" secondItem="z34-hf-Jvh" secondAttribute="leadingMargin" id="EJv-cU-fJl"/>
+                            <constraint firstItem="fBg-cI-1Kp" firstAttribute="top" secondItem="sPP-En-MQf" secondAttribute="bottom" id="Eci-Tp-u19"/>
+                            <constraint firstItem="sPP-En-MQf" firstAttribute="top" secondItem="8cP-Md-Khc" secondAttribute="bottom" constant="10" id="I2h-cj-00C"/>
+                            <constraint firstItem="kpO-sO-Jaq" firstAttribute="width" secondItem="z34-hf-Jvh" secondAttribute="width" id="SnU-t9-1mm"/>
+                            <constraint firstItem="8cP-Md-Khc" firstAttribute="top" secondItem="fKD-9a-vRx" secondAttribute="bottom" constant="20" id="m2G-fk-ew0"/>
+                            <constraint firstItem="sPP-En-MQf" firstAttribute="leading" secondItem="z34-hf-Jvh" secondAttribute="leadingMargin" constant="-16" id="nNJ-nv-ASg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sPP-En-MQf" secondAttribute="trailing" constant="-20" id="rFh-oe-pO3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="training" image="gym" id="ENC-1n-Lkd"/>
+                    <connections>
+                        <outlet property="tableView" destination="sPP-En-MQf" id="l0n-El-cVW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NVS-xR-Bov" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-167.19999999999999" y="-224.4377811094453"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="VAz-yq-3v1">
+            <objects>
+                <tabBarController id="NI9-9U-2vo" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="YYj-bU-daQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="XAs-mm-BaU" kind="relationship" relationship="viewControllers" id="RQG-pU-lNo"/>
+                        <segue destination="LRv-NA-Frv" kind="relationship" relationship="viewControllers" id="rb0-Gz-dLL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iOi-i1-wHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1119" y="104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gym" width="37" height="37"/>
+        <image name="marathon" width="87" height="87"/>
+        <image name="profile" width="37" height="37"/>
+    </resources>
+</document>

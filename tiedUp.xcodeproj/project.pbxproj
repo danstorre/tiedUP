@@ -16,6 +16,10 @@
 		FBDA66061E5395FB003DA31B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDA66051E5395FB003DA31B /* Main.storyboard */; };
 		FBDA663B1E53E158003DA31B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDA663A1E53E158003DA31B /* Bolts.framework */; };
 		FBDA663D1E53E163003DA31B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDA663C1E53E163003DA31B /* FBSDKCoreKit.framework */; };
+		FBDA66431E53FB6B003DA31B /* mainNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDA66421E53FB6B003DA31B /* mainNavigation.storyboard */; };
+		FBDA66451E540A1B003DA31B /* GameModesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA66441E540A1B003DA31B /* GameModesViewController.swift */; };
+		FBDA66471E540A90003DA31B /* GameModeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA66461E540A90003DA31B /* GameModeTableViewCell.swift */; };
+		FBDA66491E540C06003DA31B /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA66481E540C06003DA31B /* GameMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,10 @@
 		FBDA66051E5395FB003DA31B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FBDA663A1E53E158003DA31B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		FBDA663C1E53E163003DA31B /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		FBDA66421E53FB6B003DA31B /* mainNavigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = mainNavigation.storyboard; sourceTree = "<group>"; };
+		FBDA66441E540A1B003DA31B /* GameModesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModesViewController.swift; sourceTree = "<group>"; };
+		FBDA66461E540A90003DA31B /* GameModeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModeTableViewCell.swift; sourceTree = "<group>"; };
+		FBDA66481E540C06003DA31B /* GameMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +95,14 @@
 			isa = PBXGroup;
 			children = (
 				FBDA66041E5393F8003DA31B /* Frameworks */,
+				FBDA663F1E53FAF0003DA31B /* View */,
+				FBDA66411E53FB07003DA31B /* View Controller */,
+				FBDA663E1E53FAE6003DA31B /* ModelView */,
+				FBDA66401E53FAF8003DA31B /* Model */,
 				FBDA65E21E539339003DA31B /* AppDelegate.swift */,
-				FBDA65E41E539339003DA31B /* LoginViewController.swift */,
 				FBDA65E91E539339003DA31B /* Assets.xcassets */,
 				FBDA66051E5395FB003DA31B /* Main.storyboard */,
+				FBDA66421E53FB6B003DA31B /* mainNavigation.storyboard */,
 				FBDA65EB1E539339003DA31B /* LaunchScreen.storyboard */,
 				FBDA65EE1E539339003DA31B /* Info.plist */,
 			);
@@ -114,6 +126,38 @@
 				FBDA66021E5393F5003DA31B /* FBSDKLoginKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBDA663E1E53FAE6003DA31B /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ModelView;
+			sourceTree = "<group>";
+		};
+		FBDA663F1E53FAF0003DA31B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FBDA66461E540A90003DA31B /* GameModeTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FBDA66401E53FAF8003DA31B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBDA66481E540C06003DA31B /* GameMode.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FBDA66411E53FB07003DA31B /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FBDA65E41E539339003DA31B /* LoginViewController.swift */,
+				FBDA66441E540A1B003DA31B /* GameModesViewController.swift */,
+			);
+			name = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBDA66061E5395FB003DA31B /* Main.storyboard in Resources */,
+				FBDA66431E53FB6B003DA31B /* mainNavigation.storyboard in Resources */,
 				FBDA65ED1E539339003DA31B /* LaunchScreen.storyboard in Resources */,
 				FBDA65EA1E539339003DA31B /* Assets.xcassets in Resources */,
 			);
@@ -221,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBDA66491E540C06003DA31B /* GameMode.swift in Sources */,
+				FBDA66471E540A90003DA31B /* GameModeTableViewCell.swift in Sources */,
 				FBDA65E51E539339003DA31B /* LoginViewController.swift in Sources */,
 				FBDA65E31E539339003DA31B /* AppDelegate.swift in Sources */,
+				FBDA66451E540A1B003DA31B /* GameModesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
