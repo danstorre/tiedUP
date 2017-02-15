@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         let loginButton = FBSDKLoginButton()
         stackView.addArrangedSubview(loginButton)
-        
+        loginButton.readPermissions = ["email","public_profile"]
         
         if ((FBSDKAccessToken.current()) != nil) {
             let alertController: UIAlertController = UIAlertController(title: "login", message: "you're already logged", preferredStyle: .alert)
