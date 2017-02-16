@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB12B5C61E557DCF0091B9C5 /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12B5C51E557DCF0091B9C5 /* Letter.swift */; };
+		FB12B5C81E557E520091B9C5 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12B5C71E557E520091B9C5 /* Word.swift */; };
+		FB12B5CA1E5582630091B9C5 /* TiedUpCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12B5C91E5582630091B9C5 /* TiedUpCollectionViewCell.swift */; };
 		FBC776921E55548A00C9B365 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC776911E55548A00C9B365 /* InstructionsViewController.swift */; };
 		FBC776941E55561D00C9B365 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC776931E55561D00C9B365 /* UIImageExtensions.swift */; };
 		FBC776961E55567800C9B365 /* TiedUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC776951E55567800C9B365 /* TiedUpViewController.swift */; };
@@ -41,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB12B5C51E557DCF0091B9C5 /* Letter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
+		FB12B5C71E557E520091B9C5 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		FB12B5C91E5582630091B9C5 /* TiedUpCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiedUpCollectionViewCell.swift; sourceTree = "<group>"; };
 		FBC776911E55548A00C9B365 /* InstructionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		FBC776931E55561D00C9B365 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		FBC776951E55567800C9B365 /* TiedUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiedUpViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +165,7 @@
 				FBC776981E55625200C9B365 /* Color.swift */,
 				FBDA66461E540A90003DA31B /* GameModeTableViewCell.swift */,
 				FBDA664C1E54AB72003DA31B /* PerformanceTableViewCell.swift */,
+				FB12B5C91E5582630091B9C5 /* TiedUpCollectionViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -168,6 +175,8 @@
 			children = (
 				FBDA66481E540C06003DA31B /* GameMode.swift */,
 				FBDA664E1E54AF79003DA31B /* PerformanceItem.swift */,
+				FB12B5C51E557DCF0091B9C5 /* Letter.swift */,
+				FB12B5C71E557E520091B9C5 /* Word.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -292,15 +301,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBC776961E55567800C9B365 /* TiedUpViewController.swift in Sources */,
+				FB12B5C81E557E520091B9C5 /* Word.swift in Sources */,
 				FBDA664B1E54A911003DA31B /* ProfileViewController.swift in Sources */,
 				FBDA664F1E54AF79003DA31B /* PerformanceItem.swift in Sources */,
 				FBDA66491E540C06003DA31B /* GameMode.swift in Sources */,
 				FBC776921E55548A00C9B365 /* InstructionsViewController.swift in Sources */,
 				FBC776991E55625200C9B365 /* Color.swift in Sources */,
+				FB12B5C61E557DCF0091B9C5 /* Letter.swift in Sources */,
 				FBDA66471E540A90003DA31B /* GameModeTableViewCell.swift in Sources */,
 				FBDA65E51E539339003DA31B /* LoginViewController.swift in Sources */,
 				FBDA65E31E539339003DA31B /* AppDelegate.swift in Sources */,
 				FBC776941E55561D00C9B365 /* UIImageExtensions.swift in Sources */,
+				FB12B5CA1E5582630091B9C5 /* TiedUpCollectionViewCell.swift in Sources */,
 				FBDA664D1E54AB72003DA31B /* PerformanceTableViewCell.swift in Sources */,
 				FBDA66451E540A1B003DA31B /* GameModesViewController.swift in Sources */,
 			);
