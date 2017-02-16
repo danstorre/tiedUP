@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FBC776921E55548A00C9B365 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC776911E55548A00C9B365 /* InstructionsViewController.swift */; };
+		FBC776941E55561D00C9B365 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC776931E55561D00C9B365 /* UIImageExtensions.swift */; };
+		FBC776961E55567800C9B365 /* TiedUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC776951E55567800C9B365 /* TiedUpViewController.swift */; };
+		FBC776991E55625200C9B365 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC776981E55625200C9B365 /* Color.swift */; };
 		FBDA65E31E539339003DA31B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA65E21E539339003DA31B /* AppDelegate.swift */; };
 		FBDA65E51E539339003DA31B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA65E41E539339003DA31B /* LoginViewController.swift */; };
 		FBDA65EA1E539339003DA31B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDA65E91E539339003DA31B /* Assets.xcassets */; };
@@ -23,6 +27,7 @@
 		FBDA664B1E54A911003DA31B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA664A1E54A911003DA31B /* ProfileViewController.swift */; };
 		FBDA664D1E54AB72003DA31B /* PerformanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA664C1E54AB72003DA31B /* PerformanceTableViewCell.swift */; };
 		FBDA664F1E54AF79003DA31B /* PerformanceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA664E1E54AF79003DA31B /* PerformanceItem.swift */; };
+		FBDA66511E54BEAA003DA31B /* games.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDA66501E54BEAA003DA31B /* games.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FBC776911E55548A00C9B365 /* InstructionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
+		FBC776931E55561D00C9B365 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		FBC776951E55567800C9B365 /* TiedUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiedUpViewController.swift; sourceTree = "<group>"; };
+		FBC776981E55625200C9B365 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		FBDA65DF1E539339003DA31B /* tiedUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tiedUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDA65E21E539339003DA31B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBDA65E41E539339003DA31B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +65,7 @@
 		FBDA664A1E54A911003DA31B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FBDA664C1E54AB72003DA31B /* PerformanceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceTableViewCell.swift; sourceTree = "<group>"; };
 		FBDA664E1E54AF79003DA31B /* PerformanceItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceItem.swift; sourceTree = "<group>"; };
+		FBDA66501E54BEAA003DA31B /* games.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = games.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +117,7 @@
 				FBDA66401E53FAF8003DA31B /* Model */,
 				FBDA65E21E539339003DA31B /* AppDelegate.swift */,
 				FBDA65E91E539339003DA31B /* Assets.xcassets */,
+				FBDA66501E54BEAA003DA31B /* games.storyboard */,
 				FBDA66051E5395FB003DA31B /* Main.storyboard */,
 				FBDA66421E53FB6B003DA31B /* mainNavigation.storyboard */,
 				FBDA65EB1E539339003DA31B /* LaunchScreen.storyboard */,
@@ -144,6 +155,8 @@
 		FBDA663F1E53FAF0003DA31B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FBC776931E55561D00C9B365 /* UIImageExtensions.swift */,
+				FBC776981E55625200C9B365 /* Color.swift */,
 				FBDA66461E540A90003DA31B /* GameModeTableViewCell.swift */,
 				FBDA664C1E54AB72003DA31B /* PerformanceTableViewCell.swift */,
 			);
@@ -165,6 +178,8 @@
 				FBDA65E41E539339003DA31B /* LoginViewController.swift */,
 				FBDA66441E540A1B003DA31B /* GameModesViewController.swift */,
 				FBDA664A1E54A911003DA31B /* ProfileViewController.swift */,
+				FBC776911E55548A00C9B365 /* InstructionsViewController.swift */,
+				FBC776951E55567800C9B365 /* TiedUpViewController.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -256,6 +271,7 @@
 			files = (
 				FBDA66061E5395FB003DA31B /* Main.storyboard in Resources */,
 				FBDA66431E53FB6B003DA31B /* mainNavigation.storyboard in Resources */,
+				FBDA66511E54BEAA003DA31B /* games.storyboard in Resources */,
 				FBDA65ED1E539339003DA31B /* LaunchScreen.storyboard in Resources */,
 				FBDA65EA1E539339003DA31B /* Assets.xcassets in Resources */,
 			);
@@ -275,12 +291,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC776961E55567800C9B365 /* TiedUpViewController.swift in Sources */,
 				FBDA664B1E54A911003DA31B /* ProfileViewController.swift in Sources */,
 				FBDA664F1E54AF79003DA31B /* PerformanceItem.swift in Sources */,
 				FBDA66491E540C06003DA31B /* GameMode.swift in Sources */,
+				FBC776921E55548A00C9B365 /* InstructionsViewController.swift in Sources */,
+				FBC776991E55625200C9B365 /* Color.swift in Sources */,
 				FBDA66471E540A90003DA31B /* GameModeTableViewCell.swift in Sources */,
 				FBDA65E51E539339003DA31B /* LoginViewController.swift in Sources */,
 				FBDA65E31E539339003DA31B /* AppDelegate.swift in Sources */,
+				FBC776941E55561D00C9B365 /* UIImageExtensions.swift in Sources */,
 				FBDA664D1E54AB72003DA31B /* PerformanceTableViewCell.swift in Sources */,
 				FBDA66451E540A1B003DA31B /* GameModesViewController.swift in Sources */,
 			);

@@ -18,19 +18,6 @@ class PerformanceTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        self.progressView.frame = CGRect(x: self.progressView.frame.origin.x, y: self.progressView.frame.origin.y, width: self.progressView.frame.size.width, height: 9)
-        
-        var img = #imageLiteral(resourceName: "star")
-        img.resizableImage(withCapInsets: UIEdgeInsets(top: 0,left: 4,bottom: 0,right: 4))
-        
-        self.progressView.progressImage = img;
-        
-        img = #imageLiteral(resourceName: "star")
-        img.resizableImage(withCapInsets: UIEdgeInsets(top: 0,left: 4,bottom: 0,right: 4))
-        
-        
-        self.progressView.trackImage = img;
         // Initialization code
     }
 

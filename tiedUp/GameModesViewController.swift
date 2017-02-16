@@ -25,6 +25,8 @@ class GameModesViewController: UIViewController {
         gameModes.append(timeTrialGameMode)
         tableView.tableFooterView = UIView(frame: .zero)
     }
+    
+    
 
 }
 // MARK:- TableViewMethods
