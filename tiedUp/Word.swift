@@ -13,11 +13,23 @@ struct TiedUp {
     var tiedUpWord : String
     var incompleteIndexes: [Int]
     
-    func arrayOfMissingLetters() -> [Letter]{
+    func arrayOfLetters() -> [Letter]{
         var letters = [Letter]()
         
-        for char in tiedUpWord.characters {
-            let letter = Letter(type: Letter.LetterType.defaultLetter, letter: String(char))
+        for i in 0..<tiedUpWord.characters.count {
+            let index = tiedUpWord.index(tiedUpWord.startIndex, offsetBy: i)
+            
+            guard !incompleteIndexes.contains(i) else {
+                let letter = Letter(type: Letter.LetterType.incomplete, letter: String(tiedUpWord[index]))
+                
+                letters.append(letter)
+                
+                continue
+            }
+            
+            let letter = Letter(type: Letter.LetterType.defaultLetter, letter: String(tiedUpWord[index]))
+            
+            
             letters.append(letter)
         }
         

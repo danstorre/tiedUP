@@ -16,7 +16,7 @@ class TiedUpViewController: UIViewController {
     @IBOutlet weak var acceptButton: UIButton!
     @IBOutlet weak var tiedUpNavitationItem: UINavigationItem!
     var gameHasStarted : Bool = false
-    var arrayOfMissingLetters: [Letter]?
+    var arrayOfLetters: [Letter]?
     let wholeWord : TiedUp = TiedUp(tiedUpWord: "cantina", incompleteIndexes: [2,3,4])
     
     
@@ -30,7 +30,7 @@ class TiedUpViewController: UIViewController {
         flowLayout.minimumInteritemSpacing = space
         flowLayout.minimumLineSpacing = space
         flowLayout.itemSize = CGSize(width: width, height: 95)
-        arrayOfMissingLetters = wholeWord.arrayOfMissingLetters()
+        arrayOfLetters = wholeWord.arrayOfLetters()
         
         acceptButton.layer.cornerRadius = 8
     }
@@ -80,17 +80,18 @@ extension TiedUpViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        let nextLetter = arrayOfLetters![indexPath.item]
         
-        guard !wholeWord.incompleteIndexes.contains(indexPath.item) else {
+        
+        guard nextLetter.type != Letter.LetterType.incomplete else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "missingLetter", for: indexPath)
             return cell
         }
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "letter", for: indexPath) as! TiedUpCollectionViewCell
         
-        let index = wholeWord.tiedUpWord.index(wholeWord.tiedUpWord.startIndex, offsetBy: indexPath.item)
         
-        cell.letter.text = String(wholeWord.tiedUpWord[index])
+        cell.letter.text = nextLetter.letter
     
         return cell
     }
